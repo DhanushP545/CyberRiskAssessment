@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Security Analyzer</title>
+</head>
+
+<body>
+
+<h2>Enter Target</h2>
+
+<form action="/analyze" method="POST">
+
+    <label for="inp_type">Choose input type:</label>
+    <select id="input-type" name="inp_type">
+        <option value="ip">IP Address</option>
+        <option value="url">URL</option>
+        <option value="hash">File Hash</option>
+    </select>
+    
+    <br><br>
+    
+    <input type="text" name="inp" placeholder="Enter IP / URL / Hash" required>
+    
+    <button type="submit">Analyze</button>
+    
+    </form>
+
+</body>
+</html>
